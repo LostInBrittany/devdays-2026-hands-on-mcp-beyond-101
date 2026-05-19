@@ -1,0 +1,21 @@
+{
+  "name": "step-02",
+  "version": "0.0.2",
+  "description": "Module 02 — v1 disaster. Connects Claude Code (or any agentic assistant) to the workshop's shared PGlite (booted from pglite/) via the deprecated official @modelcontextprotocol/server-postgres@0.6.2 — the one Anthropic archived in May 2025 after the Datadog Security Labs SQL-injection write-up. Faithful late-2024 setup, ready to bite. The database itself lives in pglite/ so this folder doesn't expose seed.sql to participants' agents.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "smoke": "bun run scripts/exploit-test.ts",
+    "inspect": "bun run scripts/inspect-resources.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server-postgres": "0.6.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  }
+}

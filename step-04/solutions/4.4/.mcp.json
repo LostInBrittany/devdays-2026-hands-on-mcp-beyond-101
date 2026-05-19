@@ -1,0 +1,12 @@
+{
+  "_comment": "Phase 4.4 — same shape as 4.2 / 4.3 (gateway-only). Idempotency is internal to the gateway; no new env vars needed.",
+  "mcpServers": {
+    "mcp-gateway": {
+      "command": "bun",
+      "args": ["run", "gateway/src/server.ts"],
+      "env": {
+        "MCP_PRINCIPAL": "developer"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# Logger output (logs/server.log from src/log.ts, logs/golden.jsonl when
+# GOLDEN_LOG=1 in 3.8). Tail these in a side terminal — they're the
+# workshop's observation surface.
+logs/
+
+# Bun
+node_modules/

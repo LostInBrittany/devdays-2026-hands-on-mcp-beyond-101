@@ -1,0 +1,6 @@
+node_modules/
+*.log
+arena-server/data/battle-log.jsonl
+arena-server/logs/
+gateway/logs/audit.log
+catalog-server/logs/

@@ -1,0 +1,17 @@
+{
+  "_comment": "Starts in the 4.0/4.1 shape — TWO servers, no gateway. Iteration 4.2 collapses both entries to a single 'gateway' entry. The catalog block points at catalog-server/, which is the drop-in step-03/solutions/3.8/ — unchanged source.",
+  "mcpServers": {
+    "catalog-server": {
+      "command": "bun",
+      "args": ["run", "catalog-server/src/server.ts"],
+      "env": {
+        "DATABASE_URL": "postgres://postgres:any@127.0.0.1:5432/postgres?sslmode=disable",
+        "MCP_PRINCIPAL": "developer"
+      }
+    },
+    "arena-server": {
+      "command": "bun",
+      "args": ["run", "arena-server/src/server.ts"]
+    }
+  }
+}

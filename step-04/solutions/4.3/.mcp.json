@@ -1,0 +1,12 @@
+{
+  "_comment": "Phase 4.3 — same shape as 4.2 (gateway-only). The rename was demoed live and reverted; the running .mcp.json doesn't change between 4.2 and 4.4.",
+  "mcpServers": {
+    "mcp-gateway": {
+      "command": "bun",
+      "args": ["run", "gateway/src/server.ts"],
+      "env": {
+        "MCP_PRINCIPAL": "developer"
+      }
+    }
+  }
+}

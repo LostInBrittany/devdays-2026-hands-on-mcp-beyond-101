@@ -1,0 +1,17 @@
+# Bun configuration for step 01.
+# Each step ships its own bunfig.toml — security defaults are not a thing you
+# add at the end, they're a thing you start with.
+
+[install]
+# Refuse to install any package version published less than 10 days ago.
+# Mitigates fast-publish supply-chain attacks (e.g. the Shai-Hulud wave
+# of compromised npm packages, late 2025 - early 2026). Malicious versions
+# are usually pulled within hours; legitimate releases survive scrutiny.
+#
+# Value is in seconds: 10 days = 60 * 60 * 24 * 10 = 864000
+minimumReleaseAge = 864000
+
+# Packages allowed to bypass the age gate.
+# Use sparingly, only after reviewing the new version's changelog
+# (e.g. when a critical CVE fix is fresher than 10 days).
+minimumReleaseAgeExcludes = []

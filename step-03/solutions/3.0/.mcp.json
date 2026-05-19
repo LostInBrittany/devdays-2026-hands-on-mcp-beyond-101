@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ragmonsters-server": {
+      "command": "bun",
+      "args": ["run", "src/server.ts"],
+      "env": {
+        "DATABASE_URL": "postgres://postgres:any@127.0.0.1:5432/postgres?sslmode=disable"
+      }
+    }
+  }
+}

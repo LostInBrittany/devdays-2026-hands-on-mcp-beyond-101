@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "weather-server": {
+      "command": "bun",
+      "args": ["run", "src/weather-server.ts"],
+      "env": {}
+    }
+  }
+}

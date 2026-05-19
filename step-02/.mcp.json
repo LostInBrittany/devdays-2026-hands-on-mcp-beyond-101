@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "pg-generic": {
+      "command": "bunx",
+      "args": [
+        "--bun",
+        "@modelcontextprotocol/server-postgres@0.6.2",
+        "postgres://postgres:any@127.0.0.1:5432/postgres?sslmode=disable"
+      ],
+      "env": {}
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_comment": "Phase 4.0 / 4.1 shape — two servers registered separately, no gateway.",
+  "mcpServers": {
+    "catalog-server": {
+      "command": "bun",
+      "args": ["run", "catalog-server/src/server.ts"],
+      "env": {
+        "DATABASE_URL": "postgres://postgres:any@127.0.0.1:5432/postgres?sslmode=disable",
+        "MCP_PRINCIPAL": "developer"
+      }
+    },
+    "arena-server": {
+      "command": "bun",
+      "args": ["run", "arena-server/src/server.ts"]
+    }
+  }
+}

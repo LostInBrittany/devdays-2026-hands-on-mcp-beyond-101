@@ -1,0 +1,22 @@
+{
+  "name": "workshop-pglite",
+  "version": "0.1.0",
+  "description": "Shared PGlite-over-socket database for the workshop. Boots in-process Postgres (WASM) on 127.0.0.1:5432, seeded with RAGmonsters (30 monsters across 9 normalized tables). Used by step-02 (deprecated official pg-mcp) and step-03 (custom v2 server) — same database, different servers.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start:pg": "bun --hot run scripts/start-pg.ts",
+    "build:seed": "bun run scripts/build-seed.ts"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.3.0",
+    "@electric-sql/pglite-socket": "^0.0.7"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  }
+}

@@ -1,0 +1,6 @@
+# PGlite's on-disk data directory. Recreated on every `bun run start:pg` from
+# db/seed.sql, so this is pure runtime state — never commit.
+pgdata/
+
+# Bun's own
+node_modules/

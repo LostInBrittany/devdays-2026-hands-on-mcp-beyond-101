@@ -1,0 +1,12 @@
+{
+  "_comment": "Phase 4.2 — one entry, the gateway. Gateway spawns catalog + arena internally via gateway/src/children.ts; DATABASE_URL lives there.",
+  "mcpServers": {
+    "mcp-gateway": {
+      "command": "bun",
+      "args": ["run", "gateway/src/server.ts"],
+      "env": {
+        "MCP_PRINCIPAL": "developer"
+      }
+    }
+  }
+}
